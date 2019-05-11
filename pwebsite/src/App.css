@@ -1,33 +1,46 @@
-.App {
-
+body{
+  font-size: 16px;
+  font-family: Helvetica;
+  line-height: 1.5;
+  background-color: #000000;
+  color: #ffffff;
+  /* overflow: hidden; */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  position: relative;
+  height: 1000px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 50%;
+  margin-right: 50%;
+  overflow: show;
 }
 
-.App-link {
-  color: #61dafb;
+#name{
+  font-size: 15vmin;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#ball{
+  background-color: #ffffff;
+  margin-top: auto;
+  margin-left: auto;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  /* mixblendmode not supported in edge https://stackoverflow.com/questions/32613896/how-to-hack-unsupported-mix-blend-mode-css-property*/
+  mix-blend-mode: difference;
+}
+
+.content{
+  position: absolute;
+  margin-top: 82%;
 }
