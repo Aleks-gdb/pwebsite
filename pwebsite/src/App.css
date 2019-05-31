@@ -4,20 +4,59 @@ body{
   line-height: 1.5;
   background-color: #000000;
   color: #ffffff;
+  display: flex;
 }
 
 
 .nameheader{
-  position: fixed;
+  position: static;
   margin-top: 18%;
   margin-left: 50%;
   margin-right: 50%; 
 }
 
-#name{
+.nameheader h1{
   position: absolute;
   font-size: 15vmin;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
+  border-right: .15em solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 4.5s steps(25, end),
+    blinking-cursor .5s step-end;
+  animation-iteration-count: 1, 4;
+  animation-fill-mode:  none, forwards;
+}
+
+.nameheader h1:nth-child(2){
+  margin-top: 27vmin;
+  width: auto;
+  opacity: 0;
+  animation:
+    typing2 4.5s steps(25, end),
+    blinking-cursor .5s step-end infinite;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+  1%{ opacity: 1 }
+  100%{ opacity: 1 }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
 
 #ball{
