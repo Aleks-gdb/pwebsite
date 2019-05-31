@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {TweenLite} from 'gsap/TweenLite';
 //https://www.superhi.com/video/smooth-movements-with-javascript
 let mouseX = 0;
 let mouseY = 0;
@@ -15,18 +16,12 @@ export default class Home extends Component{
 
 render(){
     return(
-        <div className="main">
-            <div className="header">
-                <h1 id="name">
-                    Aleksandra<br/>Dziewulska
-                </h1>
-                <div id="ball"></div>
-            </div>
-            <div className="content">
-                <h1>
-                </h1>
-            </div>
-        </div>
+        <header className="nameheader">
+            <h1 id="name">
+                Aleksandra<br/>Dziewulska
+            </h1>
+            <div id="ball"></div>
+        </header>
     );
 }
 }
