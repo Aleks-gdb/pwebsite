@@ -1,9 +1,17 @@
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.page{
+  position: static;
+}
+
 body{
   font-size: 16px;
   font-family: Helvetica;
   line-height: 1.5;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000000 !important;
+  color: #ffffff !important;
   display: flex;
 }
 
@@ -71,4 +79,12 @@ body{
 .content{
   position: absolute;
   margin-top: 82%;
+}
+
+.mainnavbar{
+  background-color: transparent;
+}
+
+.about{
+  background-color: white;
 }
