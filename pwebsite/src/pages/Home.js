@@ -8,7 +8,8 @@ let mouseY = 0;
 var $ = require("jquery");
 
 $(window).scroll(function(){
-    $(".nameheader").css("opacity", 1 - $(window).scrollTop() / 250);
+    $(".nameheader").css("opacity", 1 - $(window).scrollTop() / 300);
+    $(".about").css("opacity", 0 + $(window).scrollTop() / 300);
   });
 
 document.addEventListener("mousemove", function(event){
@@ -47,7 +48,7 @@ export default class Home extends Component{
                     <div id="ball"></div>
                 </header>
                 <div class="about" aos="fade-down">
-                    About
+                    <h1>About</h1>
                 </div>
             </div>
         );
