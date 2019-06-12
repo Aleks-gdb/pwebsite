@@ -1,9 +1,12 @@
 html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-behavior: smooth;
 }
 
 .page{
   position: static;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body{
@@ -13,6 +16,11 @@ body{
   background-color: #000000 !important;
   color: #ffffff !important;
   display: flex;
+}
+
+.nameheader{
+  height: 1000px;
+  width: 100%;
 }
 
 .nameheader h1{
@@ -87,4 +95,5 @@ body{
 
 .about{
   background-color: white;
+  text-align: center;
 }

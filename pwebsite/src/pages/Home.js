@@ -5,6 +5,12 @@ import "../App.css";
 let mouseX = 0;
 let mouseY = 0;
 
+var $ = require("jquery");
+
+$(window).scroll(function(){
+    $(".nameheader").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
 document.addEventListener("mousemove", function(event){
         const ball = document.querySelector("#ball");
         mouseX = event.pageX;
@@ -40,6 +46,9 @@ export default class Home extends Component{
                     </h1>
                     <div id="ball"></div>
                 </header>
+                <div class="about" aos="fade-down">
+                    About
+                </div>
             </div>
         );
     }
