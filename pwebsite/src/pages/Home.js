@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import Navigation from '../components/Navigation';
 import "../App.css";
 //https://www.superhi.com/video/smooth-movements-with-javascript
-let mouseX = 0;
-let mouseY = 0;
+// let mouseX = 0;
+// let mouseY = 0;
 
 var $ = require("jquery");
 
@@ -12,13 +12,20 @@ $(window).scroll(function(){
     $(".about").css("opacity", 0 + $(window).scrollTop() / 300);
   });
 
-document.addEventListener("mousemove", function(event){
-        const ball = document.querySelector("#ball");
-        mouseX = event.pageX;
-        mouseY = event.pageY;
-        ball.style.left = mouseX + "px";
-        ball.style.top = mouseY + "px";
-})
+// document.addEventListener("mousemove", function(event){
+//         const ball = document.querySelector("#ball");
+//         mouseX = event.pageX;
+//         mouseY = event.pageY;
+//         ball.style.left = mouseX + "px";
+//         ball.style.top = mouseY + "px";
+// })
+
+$(window).bind('mousemove', function(e){
+    $('#ball').css({
+       left:  e.pageX + 20,
+       top:   e.pageY
+    });
+});
 
 export default class Home extends Component{
 
@@ -48,7 +55,7 @@ export default class Home extends Component{
                     <div id="ball"></div>
                 </header>
                 <div class="about" aos="fade-down">
-                    <h1>About</h1>
+                    <h1>Hello</h1>
                 </div>
             </div>
         );
