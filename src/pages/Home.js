@@ -43,8 +43,8 @@ export default class Home extends Component{
 
     render(){
         return(
-            <div className="page">
-                {/* <Navigation/> */}
+            <div>
+                <Navigation/>
                 <header className="nameheader" onClick={this.enter}>
                     <h1>
                         Aleksandra

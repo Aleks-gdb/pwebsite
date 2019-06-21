@@ -3,11 +3,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.page{
-  position: static;
-  overflow-y: auto;
-  overflow-x: hidden;
+#root{
   width: 100%;
+}
+
+.item{
+  padding-right: 10px;
 }
 
 body{
@@ -17,6 +18,7 @@ body{
   background-color: #000000 !important;
   color: #ffffff !important;
   display: flex;
+  margin: 0;
 }
 
 .nameheader{
