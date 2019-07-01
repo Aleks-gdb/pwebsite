@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Card from 'react-bootstrap/Card';
+import CardColumns from 'react-bootstrap/CardColumns';
 import Navigation from '../components/Navigation';
 import "../App.css";
 //https://www.superhi.com/video/smooth-movements-with-javascript
@@ -27,25 +29,26 @@ $(window).bind('mousemove', function(e){
     });
 });
 
+
 export default class Home extends Component{
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = {
-            mode: true, //dark mode by default, false for light mode
-        }
-        this.enter = this.enter.bind(this)
-    }
+        this.state = { user: [] };
+      }
 
-    enter(){
-        console.log(this.state.mode);
-    }
+      async componentDidMount() {
+        await fetch(`https://api.github.com/users/aleks-gdb`)
+            .then(response => response.json())
+            .then(data => {this.setState({user: data})});
+        console.log(this.state.user);
+      }
 
     render(){
         return(
             <div>
-                <Navigation/>
-                <header className="nameheader" onClick={this.enter}>
+                {/* <Navigation/> */}
+                <header className="nameheader">
                     <h1>
                         Aleksandra
                     </h1>
@@ -54,8 +57,12 @@ export default class Home extends Component{
                     </h1>
                     <div id="ball"></div>
                 </header>
-                <div class="about" aos="fade-down">
+                <div className="about" aos="fade-down">
                     <h1>Hello</h1>
+                    <p>My name is Aleksandra Dziewulska and I am currently a full time student
+                       at California State University Long Beach. I plan to graduate in May 2020 with a B.S. in Computer Science.
+                       I enjoy learning new technologies, creating web apps, and collaborating on projects.
+                    </p>
                 </div>
             </div>
         );
