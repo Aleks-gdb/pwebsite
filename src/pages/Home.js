@@ -29,12 +29,17 @@ $(window).bind('mousemove', function(e){
     });
 });
 
+// Edge 20+
+var isEdge = document.documentMode || /Edge/.test(navigator.userAgent);
 
 export default class Home extends Component{
 
     constructor(props) {
         super(props);
-        this.state = { user: [] };
+        this.state = { 
+            user: [],
+            check: isEdge
+        };
       }
 
       async componentDidMount() {
@@ -42,6 +47,7 @@ export default class Home extends Component{
             .then(response => response.json())
             .then(data => {this.setState({user: data})});
         console.log(this.state.user);
+        console.log(this.state.check);
       }
 
     render(){
@@ -49,19 +55,19 @@ export default class Home extends Component{
             <div>
                 {/* <Navigation/> */}
                 <header className="nameheader">
-                    <h1>
+                    <h1 class={(this.state.check ? 'true' : 'false')} >
                         Aleksandra
                     </h1>
-                    <h1>
+                    <h1 class={(this.state.check ? 'true' : 'false')}>
                         Dziewulska
                     </h1>
-                    <div id="ball"></div>
+                    {!this.state.check ? <div id="ball"></div> : <div></div>}
                 </header>
                 <div className="about" aos="fade-down">
                     <h1>Hello</h1>
                     <p>My name is Aleksandra Dziewulska and I am currently a full time student
                        at California State University Long Beach. I plan to graduate in May 2020 with a B.S. in Computer Science.
-                       I enjoy learning new technologies, creating web apps, and collaborating on projects.
+                       I enjoy learning new technologies, creating web apps, and collaborating on projects. <br/><br/>
                     </p>
                 </div>
             </div>

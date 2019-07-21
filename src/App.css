@@ -27,44 +27,389 @@ body{
   width: 100%;
 }
 
-.nameheader h1{
-  position: absolute;
-  font-size: 15vmin;
-  margin-left: 50%;
-  margin-right: 50%; 
-  margin-top: 18%;
-  transform: translate(-50%, -50%);
-  border-right: .15em solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  animation:
-    typing 3.5s steps(30, end),
-    blinking-cursor .8s step-end;
-  animation-iteration-count: 1, 5;
-  animation-fill-mode:  none, forwards;
+@media screen and (min-width: 2560px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 24%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 33.5%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 27%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 1180px }
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 1180px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
 }
 
-.nameheader h1:nth-child(2){
-  margin-top: 27%;
-  opacity: 0;
-  animation:
-    typing2 3.5s steps(30, end),
-    blinking-cursor .8s step-end infinite;
-  animation-delay: 4.3s;
-  animation-fill-mode: forwards, none;
+@media screen and (min-width: 1440px) and (max-width: 2559px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 20%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 28.75%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 28.75%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 630px}
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 630px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 616.6px }
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 25%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 35.5%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 35.5%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 535px }
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 535px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
 }
 
-@keyframes typing2 {
-  from { width: 0 }
-  to { width: 616.6px }
-  1%{ opacity: 1 }
-  100%{ opacity: 1 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 30%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 43.5%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 27%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 535px }
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 535px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 38%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 54%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 27%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 335px }
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 335px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 38%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 54%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 27%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 295px }
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 295px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+  .nameheader h1.false{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 38%;
+    transform: translate(-50%, -50%);
+    border-right: .15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(30, end),
+      blinking-cursor .8s step-end;
+    animation-iteration-count: 1, 5;
+    animation-fill-mode:  none, forwards;
+  }
+
+  .nameheader h1.false:nth-child(2){
+    margin-top: 54%;
+    opacity: 0;
+    animation:
+      typing2 3.5s steps(30, end),
+      blinking-cursor .8s step-end infinite;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards, none;
+  }
+
+  .nameheader h1.true{
+    position: absolute;
+    font-size: 15vmin;
+    margin-left: 50%;
+    margin-right: 50%; 
+    margin-top: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nameheader h1.true:nth-child(2){
+    margin-top: 27%;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 250px }
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 250px }
+    1%{ opacity: 1 }
+    100%{ opacity: 1 }
+  }
 }
 
 /* The typewriter cursor effect */
@@ -73,19 +418,21 @@ body{
   50% { border-color: white; }
 }
 
-#ball{
-  background-color: #ffffff;
-  margin-top: auto;
-  margin-left: auto;
-  width:150px;
-  height:150px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  /* mixblendmode not supported in edge https://stackoverflow.com/questions/32613896/how-to-hack-unsupported-mix-blend-mode-css-property*/
-  mix-blend-mode: difference;
+@media screen and (min-width: 1024px){
+  #ball{
+    background-color: #ffffff;
+    margin-top: auto;
+    margin-left: auto;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    /* mixblendmode not supported in edge https://stackoverflow.com/questions/32613896/how-to-hack-unsupported-mix-blend-mode-css-property*/
+    mix-blend-mode: difference;
+  }
 }
 
 .content{
@@ -102,7 +449,6 @@ body{
   height: 700px;
   opacity: 0;
   text-align: center;
-  overflow: show !important;
 }
 
 .about h1{
