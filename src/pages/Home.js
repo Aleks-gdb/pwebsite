@@ -64,9 +64,9 @@ export default class Home extends Component{
                     {!this.state.check ? <div id="ball"></div> : <div></div>}
                 </header>
                 <div className="about" aos="fade-down">
-                    <h1>Hello</h1>
-                    <p>My name is Aleksandra Dziewulska and I am currently a full time student
-                       at California State University Long Beach. I plan to graduate in May 2020 with a B.S. in Computer Science.
+                    <h1>Hi, I'm Aleks!</h1>
+                    <p>I am currently a full time student at California State University Long Beach. 
+                       I plan to graduate in May 2020 with a B.S. in Computer Science.
                        I enjoy learning new technologies, creating web apps, and collaborating on projects. <br/><br/>
                     </p>
                 </div>

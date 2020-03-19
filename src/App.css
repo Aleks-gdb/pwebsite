@@ -458,9 +458,10 @@ body{
 
 .about p{
   font-size: 4vmin;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
   width: 100%;
+  padding: 40px;
 }
 
 .card{
