@@ -6,15 +6,12 @@ import Loading from '../components/Loading';
 
 const HomeRoute = React.lazy(() => import('../pages/Home'));
 
-const ArtRoute = React.lazy(() => import('../pages/Art'));
-
 const PageNotFoundRoute = React.lazy(() => import('../pages/PageNotFound'));
 
 const RoutePath = ({ location }) => (
   <React.Suspense fallback={<Loading />}>
     <Switch key={location.key} location={location}>
       <Route exact={true} path="/" component={HomeRoute} />
-      <Route exact={true} path="/Art" component={ArtRoute} />
       <Route component={PageNotFoundRoute} />
     </Switch>
   </React.Suspense>

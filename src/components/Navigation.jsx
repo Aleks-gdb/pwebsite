@@ -13,7 +13,10 @@ export default class Navigation extends Component {
             <Nav.Link href="#header">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#about">About Me</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#github">GitHub</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>

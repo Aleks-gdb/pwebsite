@@ -18,10 +18,10 @@ export default class Header extends Component{
         return(
             <div id="header" name="header">
                 <header className="nameheader">
-                    <h1 class={(this.state.check ? 'true' : 'false')}>
+                    <h1 className={(this.state.check ? 'true' : 'false')}>
                         Aleksandra
                     </h1>
-                    <h1 class={(this.state.check ? 'true' : 'false')}>
+                    <h1 className={(this.state.check ? 'true' : 'false')}>
                         Dziewulska
                     </h1>
                 </header>
