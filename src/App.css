@@ -484,6 +484,15 @@ body{
   padding-bottom: 40px;
 }
 
+.container-fluid{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#repoContainer{
+  padding: 0px;
+}
+
 #profilePic{
   width: 100%;
 }

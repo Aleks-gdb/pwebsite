@@ -68,11 +68,11 @@ export default class Github extends Component{
             <div id="github" name="github">
                 <div className="github" aos="fade-down">
                     <h1>My GitHub at a Glance</h1>
-                    <Container>
+                    <Container fluid>
                         <Row>
                             <Col xs={5} md={3}>
                                 <Jumbotron id="githubProfile">
-                                <a href={this.state.user.html_url} target="_blank">
+                                <a href={this.state.user.html_url} target="_blank" rel="noopener noreferrer">
                                 <h1 id="repoName">{this.state.user.login}</h1>
                                 </a>
                                 <Image src={this.state.user.avatar_url} rounded id="profilePic"/>
@@ -80,14 +80,14 @@ export default class Github extends Component{
                                 </Jumbotron>
                             </Col>
                             <Col>
-                            <Container>
+                            <Container id="repoContainer">
                                 <Row>
                                {/* {this.getRepos()} */}
                                {this.state.repos.map( (repo) =>{
                                    return(
                                        <Col xs={6} md={4}>
                                            <Jumbotron id="repos">
-                                           <a href={repo.html_url} target="_blank">
+                                           <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                                            <h1 id="repoName">{repo.name}</h1>
                                            </a>
                                            <p id="repoDesc">{repo.description}</p>

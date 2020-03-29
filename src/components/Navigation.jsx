@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import {Navbar, Nav, NavItem} from "react-bootstrap";
+import {Nav} from "react-bootstrap";
 import classNames from 'classnames/bind';
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../App.css";
 
 export default class Navigation extends Component {
