@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import { Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
 import "../App.css";
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from "react-apollo";
-import { Query } from '@apollo/react-components';
-import { gql } from "apollo-boost";
+// import ApolloClient from 'apollo-boost';
+// import { ApolloProvider } from "react-apollo";
+// import { Query } from '@apollo/react-components';
+// import { gql } from "apollo-boost";
 
-const client = new ApolloClient({
-    uri: 'https://api.github.com/graphql',
-  });
+// const client = new ApolloClient({
+//     uri: 'https://api.github.com/graphql',
+//   });
 
 export default class Github extends Component{
     constructor(props) {
